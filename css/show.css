@@ -1,0 +1,46 @@
+header{font-family: '黑体','arial';background: #fff;border-bottom: solid 1px #dfdfdf;padding: 0 1.5rem;height: 5rem;line-height: 5rem;font-size: 1.8rem;}
+header .container{margin:auto;}
+header .container .index{color: #2b61c0;padding: .8rem .2rem;margin: 0 .3rem;}
+header .container .share-bth{margin-top: 1rem;float: right;line-height: 3rem;border-radius: 3px;padding: .8rem .2rem;margin: 0 1.3rem;}
+header .container .index .jian {margin: 0 1rem 0 0;height: 2rem;}
+.show-content{background: #fff;padding: 0 2.5rem 1rem;overflow: hidden;}
+.show-content h2{font-size: 2.2rem;text-align: center;padding: 1rem 0;}
+.show-content {font-size: 2.2rem;text-align: center;padding: 1rem 0;}
+.show-content .em{font-size: 1.4rem;line-height: 1.4rem;padding-bottom: 1rem;border-bottom: solid 1px #dfdfdf;font-size: 1.6rem;line-height: 1.6rem;text-align: left; margin-left: 1rem;}
+.show-content .em a{float: right;color: #2b61c0;border: 1px solid;padding: .2rem .6rem;margin-top: -.2rem;margin-right: 1rem;}
+.show-content .con{text-indent: 2em; margin-top: 1rem;word-wrap:break-word; white-space:normal; word-break:break-all;text-align: left;font-size: 1.4rem;padding: .5rem 1rem;}
+.show-content .con img{max-width: 100%;height: auto;display: block;margin: 1rem auto;}
+.show-content .con table td{border: solid 1px #dfdfdf;padding: .5rem 1rem;}
+
+/* 分享 */
+.content .intro-list .share{margin: 1rem 0 0;padding: .5rem 0;font-size: 1.2rem;border-top: solid 1px #DFDFDF;background: #fff;}
+.content .intro-list .share li {float: left;width: 25%;text-align: center;padding: 10px 0;font-size: 1.2rem;}
+
+/* 右上角的分享 */
+.content .left-intro-list {position: fixed;bottom: 0;left: 0;width: 100%;z-index: 9;}
+.content .left-intro-list .share{margin: 1rem 0 0;padding: .5rem 0;font-size: 1.2rem;border-top: solid 1px #DFDFDF;background: #fff;}
+.content .left-intro-list .share li {float: left;width: 25%;text-align: center;padding: 10px 0;font-size: 1.2rem;}
+.make{position: fixed;top: 0;left: 0;bottom: 0;right: 0;z-index: 8;background: rgba(0, 0, 0, .5);}
+
+/* 上一篇、下一篇 */
+.show-updown-list {background: #fff;margin: 1rem 0;padding: 0 1rem;}
+.show-updown-list .show-updown-list-a {width: 100%;border-bottom: 1px dotted #333;display: block;height: 7.8rem; margin-bottom: 2px;}
+.show-updown-list .show-updown-list-a:last-child {width: 100%;display: block;}
+.show-updown-list .show-updown-list-a div:first-child{display: inline-block;width: 20%;float: left;overflow: hidden;}
+.show-updown-list .show-updown-list-a div:first-child img{max-width: 100%;    max-height: 7.5rem;overflow: hidden;}
+.show-updown-list .show-updown-list-a div:last-child{display: inline-block;width: 80%;padding-left:1rem;margin-top: .8rem;overflow: hidden;}
+.show-updown-list .show-updown-list-a div:last-child h2{height: 5rem;font-size: 1.6rem;line-height: 25px;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;word-wrap:break-word; white-space:normal; word-break:break-all;}
+.show-updown-list .show-updown-list-a div:last-child .em {padding: .4rem 0;}
+.show-updown-list .show-updown-list-a div:last-child .em .span{ float: right;color: #2b61c0;border: 1px solid;padding: 0 .6rem;}
+
+/* news */
+.news-article{background:#fff;padding:1rem 0;}
+.news-article li{border-bottom:1px dotted #333;height:40px;line-height:36px;;margin:0 1.8rem;}
+.news-article li:last-child{border-bottom:1px dotted #fff;}
+.news-article li a{display:block;font-size:1.6rem;overflow:hidden;white-space:nowrap;-webkit-text-overflow:ellipsis;text-overflow:ellipsis;}
+.news{margin-top:1rem;}
+
+/* 最热门文章 */
+.show-other-list{margin: 1rem 0;}
+.hot{color:#CC0000}
+.new{color:#0000FF}

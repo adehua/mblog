@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>陈德华</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet/less" href="css/main.less?var=0.01">
+    <link  rel="stylesheet" type="text/css" href="css/show.css">
+    <script src="js/less.min.js"></script>
+    <script charset="utf-8" src="./js/browser.js"></script>
+</head>
+<script type="text/javascript">
+    console.log("pc");
+</script>
+<body>
+<header class="header clear">
+    <div class="container">
+        <a href="index.html" class="index"><img src="./images/back.png" alt="" class="jian"><span>首页</span></a>
+        <a href="javascript:void(0);" class="share-bth">分享</a>
+    </div>
+</header>
+<div class="content">
+    <!-- 文章主题内容 -->
+    <section class="show-content" style="display: none;">
+        <!-- 标题 -->
+        <h2>AS</h2>
+        <!-- 时间，发布人 -->
+        <p class="em">
+            <em>2015-12-21</em>
+            <!-- 下面这个是这个文章所属的栏目，可以先隐藏 -->
+            <a href="#">栏目</a>
+        </p>
+        <!-- 内容 -->
+        <p class="con">
+            分享陈老师分享陈老师分享陈老师分享陈老师分享陈老师分享陈老师分享陈老师imagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimagesimages
+            <img src="./images/ceshi.jpg">
+        </p>
+    </section>
+
+    <!-- 文章内容下面的分享 -->
+    <section class="intro-list">
+        <ul class="share clear">
+            <li>
+                <img src="./images/icon1.png" alt="朋友圈">
+                <div>朋友圈</div>
+            </li>
+            <li>
+                <img src="./images/icon2.png" alt="微信">
+                <div>微信</div>
+            </li>
+            <li>
+                <img src="./images/icon3.png" alt="收藏">
+                <div>收藏</div>
+            </li>
+            <li>
+                <img src="./images/icon4.png" alt="QQ">
+                <div>QQ</div>
+            </li>
+        </ul>
+    </section>
+    <!--<div class="jiathis_style_32x32" style="height:80px;">-->
+    <!--<a class="jiathis_button_qzone"></a>-->
+    <!--<a class="jiathis_button_weixin"></a>-->
+    <!--<a class="jiathis_button_qzone"></a>-->
+    <!--<a class="jiathis_button_cqq"></a>-->
+    <!--</div>-->
+    <!--<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>-->
+
+    <!-- 上一篇、下一篇 -->
+    <section class="show-updown-list">
+        <a href="javascript:show('{{art_id}}')" class="show-updown-list-a show-a" style="display: none" >
+            <div>
+                <img src="./img/ceshi.png">
+            </div>
+            <div>
+                <p class="em">
+                    <em>2015-12-21</em>
+                    <span>自考本科</span>
+                    <span class="span">上一篇</span>
+                </p>
+                <h2>精选|演出季，快来看演出喽精选|演出季，快来看演出喽精选|演出季，快来看演出喽精选|演出季，快来看演出喽</h2>
+            </div>
+        </a>
+        <a href="javascript:show('{{art_id}}')" class="show-updown-list-a show-a" style="display: none" >
+            <div class="">
+                <img src="./img/ceshi.png">
+            </div>
+            <div>
+                <p class="em">
+                    <em>2015-12-21</em>
+                    <span>自考本科</span>
+                    <span class="span">下一篇</span>
+                </p>
+                <h2>下一篇|</h2>
+            </div>
+        </a>
+    </section>
+
+    <!-- 热门的文章（也可以使用上一篇下一篇的样式） -->
+    <section class="show-other-list">
+        <div class="news-article news-yejie">
+            <ul>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 右上角的分享 -->
+    <div class="make" style="display:none;"></div>
+    <section class="left-intro-list" style="display:none;">
+        <ul class="share clear">
+            <li>
+                <img src="./images/icon1.png" alt="朋友圈">
+                <div>朋友圈</div>
+            </li>
+            <li>
+                <img src="./images/icon2.png" alt="微信">
+                <div>微信</div>
+            </li>
+            <li>
+                <img src="./images/icon3.png" alt="收藏">
+                <div>收藏</div>
+            </li>
+            <li>
+                <img src="./images/icon4.png" alt="QQ">
+                <div>QQ</div>
+            </li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
+<script charset="utf-8" src="./js/zepto.min.js"></script>
+<script charset="utf-8" src="./js/share.js"></script>
+<script type="text/javascript" src="js/handlebars-v4.0.2.js"></script>
+<script id="entry-template" type="text/x-handlebars-template">
+    {{#foreach this}}
+    <li><a href="javascript:show('{{art_id}}')" class="show-a" title="{{title}}">{{title}}</a></li>
+    {{/foreach}}
+</script>
+
+<script type="text/javascript">
+    var id = window.location.hash.slice(1);
+    show(id);
+    $(".share-bth").on("click", function (event) {
+        $(".make").show();
+        $(".left-intro-list").show();
+    });
+    $(".make").on("click", function (event) {
+        $(".make").hide();
+        $(".left-intro-list").hide();
+    });
+    function show(id){
+        $.ajax({
+            url: "http://api.xnnye.cn/blog/show/" + id,
+            type: "get",
+            dataType: "jsonp",
+            success: function (datas) {
+                //内容
+                var data = datas.data.artinfo;
+                $(".show-content").show();
+                $(".show-content h2").text(data.title);
+                $(".show-content .con").html(data.content);
+                $(".show-content .em em").text(data.updatetime);
+                $(".show-content .em a").text(data.cate_name);
+                //上下一个
+                var ondown = datas.data.ondown;
+                if (ondown.on) {
+                    var on = $(".show-updown-list-a").eq(0);
+                    on.attr("href", "javascript:show('" + ondown.on.art_id + "')");
+                    on.children("div").eq(1).children(".em").children("em").text(ondown.on.updatetime);
+                    on.children("div").eq(1).children(".em").children("span").eq(0).text(ondown.on.cate_name);
+                    on.children("div").eq(1).children("h2").text(ondown.on.title);
+                    on.children("div").eq(0).children("img").attr("src", ondown.on.image);
+                    on.show();
+                }
+                if (ondown.down) {
+                    console.log(ondown)
+                    var down = $(".show-updown-list-a").eq(1);
+                    down.attr("href", "javascript:show('" + ondown.down.art_id + "')");
+                    down.children("div").eq(1).children(".em").children("em").text(ondown.down.updatetime);
+                    down.children("div").eq(1).children(".em").children("span").eq(0).text(ondown.on.cate_name);
+                    down.children("div").eq(1).children("h2").text(ondown.down.title);
+                    down.show();
+                }
+                //最热门的6条数据
+                var blogs = datas.data.list;
+                var source = $("#entry-template").html();
+                var template = Handlebars.compile(source);
+                Handlebars.registerHelper("foreach", function (blogs, options) {
+                    var templateWithInterpolatedData = "";
+                    for (var i = 0; i < blogs.length; i++) {
+                        templateWithInterpolatedData += options.fn(blogs[i]);
+                    }
+                    return templateWithInterpolatedData; //把所有的数据对象插入到模板后生成的html字符串返回。
+                });
+                var html = template(blogs);
+                $(".news-yejie ul").empty().append(html);
+
+            },
+            complete: function (XMLHttpRequest, textStatus) {
+
+            },
+            error: function () {
+            }
+        });
+    }
+</script>
