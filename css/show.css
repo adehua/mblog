@@ -8,7 +8,8 @@ header .container .index .jian {margin: 0 1rem 0 0;height: 2rem;}
 .show-content {font-size: 2.2rem;text-align: center;padding: 1rem 0;}
 .show-content .em{font-size: 1.4rem;line-height: 1.4rem;padding-bottom: 1rem;border-bottom: solid 1px #dfdfdf;font-size: 1.6rem;line-height: 1.6rem;text-align: left; margin-left: 1rem;}
 .show-content .em a{float: right;color: #2b61c0;border: 1px solid;padding: .2rem .6rem;margin-top: -.2rem;margin-right: 1rem;}
-.show-content .con{text-indent: 2em; margin-top: 1rem;word-wrap:break-word; white-space:normal; word-break:break-all;text-align: left;font-size: 1.4rem;padding: .5rem 1rem;}
+.show-content .con{ margin-top: 1rem;word-wrap:break-word; white-space:normal; word-break:break-all;text-align: left;font-size: 1.4rem;padding: .5rem 1rem;}
+.show-content .con p{text-indent: 2rem;}
 .show-content .con img{max-width: 100%;height: auto;display: block;margin: 1rem auto;}
 .show-content .con table td{border: solid 1px #dfdfdf;padding: .5rem 1rem;}
 
