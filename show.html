@@ -164,14 +164,14 @@
                 $(".show-content").show();
                 $(".show-content h2").text(data.title);
                 $(".show-content .con").html(data.content);
-                $(".show-content .em em").text(data.updatetime);
+                $(".show-content .em em").text(data.inputtime);
                 $(".show-content .em a").text(data.cate_name);
                 //上下一个
                 var ondown = datas.data.ondown;
                 if (ondown.on) {
                     var on = $(".show-updown-list-a").eq(0);
                     on.attr("href", "javascript:show('" + ondown.on.art_id + "')");
-                    on.children("div").eq(1).children(".em").children("em").text(ondown.on.updatetime);
+                    on.children("div").eq(1).children(".em").children("em").text(ondown.on.inputtime);
                     on.children("div").eq(1).children(".em").children("span").eq(0).text(ondown.on.cate_name);
                     on.children("div").eq(1).children("h2").text(ondown.on.title);
                     on.children("div").eq(0).children("img").attr("src", ondown.on.image);
@@ -181,7 +181,7 @@
                     console.log(ondown)
                     var down = $(".show-updown-list-a").eq(1);
                     down.attr("href", "javascript:show('" + ondown.down.art_id + "')");
-                    down.children("div").eq(1).children(".em").children("em").text(ondown.down.updatetime);
+                    down.children("div").eq(1).children(".em").children("em").text(ondown.down.inputtime);
                     down.children("div").eq(1).children(".em").children("span").eq(0).text(ondown.on.cate_name);
                     down.children("div").eq(1).children("h2").text(ondown.down.title);
                     down.show();
