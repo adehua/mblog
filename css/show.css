@@ -1,10 +1,10 @@
-header{font-family: '黑体','arial';background: #fff;border-bottom: solid 1px #dfdfdf;padding: 0 1.5rem;height: 5rem;line-height: 5rem;font-size: 1.8rem;position: fixed;width: 100%;top: 0px;}
+header{font-family: '黑体','arial';background: #fff;border-bottom: solid 1px #dfdfdf;padding: 0 1.5rem;height: 5rem;line-height: 5rem;font-size: 1.8rem;position: fixed;width: 100%;top: 2rem;}
 header .container{margin:auto;}
 header .container .index{color: #2b61c0;padding: .8rem .2rem;margin: 0 .3rem;}
 header .container .share-bth{margin-top: 1rem;float: right;line-height: 3rem;border-radius: 3px;padding: .8rem .2rem;margin: 0 1.3rem;}
 header .container .index .jian {margin: 0 1rem 0 0;height: 2rem;}
 
-.content{margin-top: 5rem;}
+.content{margin-top: 7rem;}
 .show-content{background: #fff;padding: 0 2.5rem 1rem;overflow: hidden;}
 .show-content h2{font-size: 2.2rem;text-align: center;padding: 1rem 0;}
 .show-content {font-size: 2.2rem;text-align: center;padding: 1rem 0;}
